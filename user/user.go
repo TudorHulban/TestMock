@@ -6,6 +6,6 @@ type User struct {
 	Doer doer.Doer
 }
 
-func (u *User) PrintMsg(m string) error {
-	return u.Doer.DoSomething(m)
+func (u *User) PrintMsg() error {
+	return u.Doer.DoSomething("xxx")
 }
